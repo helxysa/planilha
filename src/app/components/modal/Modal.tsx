@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { addListagem } from '../../actions/actions'; 
+import { ListagemType } from '@/app/types/types';
 
 const NewEntryModal = ({ isOpen, onClose, item }: { isOpen: boolean; onClose: () => void; item: ListagemType | null }) => {
    const [descricao, setDescricao] = useState(item ? item.descricao : '');
